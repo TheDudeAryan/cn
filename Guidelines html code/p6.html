@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            justify-content: center;
+        }
+
+        .form-container {
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 5px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            margin-top: 5px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+        .checkbox-group {
+            display: flex;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <form>
+            <label for="friendName">Enter Name of your friend</label>
+            <input type="text">
+            <br>
+            <label for="chooseFileForFrnd">Choose the file you want to post to your friend</label>
+            <input>
+            <input type="file" name="file" id="chooseFileForFrnd">
+            <br>
+            <label for="fileType">What does the file contain?</label>
+            <div class="checkbox-group">
+                <input type="checkbox" name="fileType" value="Image">
+                <label>Image</label>
+                <input type="checkbox" name="fileType" value="Source Code">
+                <label>Source Code</label>
+                <input type="checkbox" name="fileType" value="Binary Code">
+                <label>Binary Code</label>
+            </div>
+            <br>
+            <label>You have completed the form. &nbsp<button type="submit">Submit Query</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
